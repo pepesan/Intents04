@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Intents04</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="salta">Salta</string>
+    <string name="title_activity_my_activity2">MyActivity2</string>
+    <string name="segunda">Segunda Activity</string>
+    <string name="hola">Di Algo</string>
+    <string name="listener">listener</string>
+    <string name="pulsado">Pulsado</string>
+    <string name="hola_txt">Hola</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="volver">Volver</string>
+
+</resources>
