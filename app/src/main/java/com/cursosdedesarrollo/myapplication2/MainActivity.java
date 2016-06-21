@@ -12,6 +12,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     private Button b;
+    private Boolean primera=false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,6 +50,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onResume(){
         super.onResume();
         Log.d("Activity1","onResume");
+        if (primera==false){
+            Log.d("Activity1","Es mi primera vez");
+            primera=true;
+        }else{
+            Log.d("Activity1","He vuelto a la primera activity");
+        }
     }
     protected void onStop(){
         super.onStop();
