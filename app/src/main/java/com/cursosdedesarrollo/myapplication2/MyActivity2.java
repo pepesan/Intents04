@@ -3,6 +3,7 @@ package com.cursosdedesarrollo.myapplication2;
 import android.app.Activity;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -18,6 +19,23 @@ public class MyActivity2 extends AppCompatActivity {
     public void volver(View v){
         finish();
     }
+    protected void onPause(){
+        super.onPause();
+        Log.d("Activity2","onPause");
+    }
+    protected void onResume(){
+        super.onResume();
+        Log.d("Activity2","onResume");
+    }
+    protected void onStop(){
+        super.onStop();
+        Log.d("Activity2","onStop");
+    }
+    protected void onStart(){
+        super.onStart();
+        Log.d("Activity2","onStart");
+    }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

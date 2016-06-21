@@ -42,7 +42,22 @@ public class MainActivity extends AppCompatActivity {
                 MyActivity2.class);
         startActivity(i);
     }
-
+    protected void onPause(){
+        super.onPause();
+        Log.d("Activity1","onPause");
+    }
+    protected void onResume(){
+        super.onResume();
+        Log.d("Activity1","onResume");
+    }
+    protected void onStop(){
+        super.onStop();
+        Log.d("Activity1","onStop");
+    }
+    protected void onStart(){
+        super.onStart();
+        Log.d("Activity1","onStart");
+    }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
