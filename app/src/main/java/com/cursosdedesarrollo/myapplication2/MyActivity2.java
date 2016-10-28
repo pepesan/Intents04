@@ -2,6 +2,7 @@ package com.cursosdedesarrollo.myapplication2;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Menu;
@@ -15,6 +16,8 @@ public class MyActivity2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_activity2);
+        ActionBar ab= getSupportActionBar();
+        ab.setDisplayHomeAsUpEnabled(true);
     }
     public void volver(View v){
         finish();

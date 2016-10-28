@@ -17,7 +17,14 @@
         </activity>
         <activity
             android:name=".MyActivity2"
-            android:label="@string/segunda"></activity>
+            android:label="@string/segunda"
+            android:parentActivityName="com.cursosdedesarrollo.myapplication2.MainActivity"
+            >
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cursosdedesarrollo.myapplication2.MainActivity" />
+        </activity>
         <activity
             android:name=".Main2Activity"
             android:label="@string/title_activity_main2"
